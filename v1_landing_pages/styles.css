@@ -1,0 +1,46 @@
+
+/* navbar */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1rem;
+}
+
+.hamburger * {
+  border: 2px solid black;
+  width: 3rem;
+}
+
+
+.logo-img {
+    width: 30%;
+    border: 2px solid red;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 2px solid red;
+}
+
+.min-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-brand {
+    width: 50%;
+    border: 2px solid red;
+}
+
+.min-menu2 {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    
+}
