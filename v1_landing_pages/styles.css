@@ -1,10 +1,16 @@
 /* defaults */
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("./assets/fonts/HelveticaNeueLTStd-BoldExtended.otf")
+  font-family: "Helveticas";
+  src: url("./assets/fonts/Helvetica_Neue.otf")
     format("opentype");
-  font-weight: bold;
-  font-style: normal;
+}
+
+body {
+  font-family: "Helveticas", sans-serif;
+}
+
+:root {
+  --font-family: "Helveticas";
 }
 
 /* navbar */
@@ -29,7 +35,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
-  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
 }
 
 .min-menu {
@@ -53,11 +59,29 @@
 }
 
 .request-btn {
+  display: flex;
+  gap: 1rem;
   color: #f2fcff;
   background-color: #262626;
   box-shadow: none;
   border: 2px solid #262626;
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1.2rem 1.8rem;
   box-shadow: none;
+  font-family:"Helveticas", sans-serif;
+}
+
+/* main-body */
+.main-body {
+  display: flex;
+  border: 2px solid red;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-body {
+  padding: 0 2rem;
 }
