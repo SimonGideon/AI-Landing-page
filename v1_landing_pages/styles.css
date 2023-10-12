@@ -4,15 +4,26 @@
   src: url("./assets/fonts/Helvetica_Neue.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Helveticas-light";
+  src: url("./assets/fonts/Helvetica_Neue_43_Light.otf") format("opentype");
+}
+
+:root {
+  --bold-font-family: "Helveticas";
+  --light-font: Helveticas-light;
+  --white-btn: rgb(255, 255, 255);
+  --btn-text-color: #1b1b1b;
+  --body-bg: rgba(239, 239, 239, 255);
+  --inactive-text: rgba(206,206,206,255);
+}
+
 body {
   font-family: "Helveticas", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --font-family: "Helveticas";
+  background-color: var(--body-bg);
 }
 
 /* navbar */
@@ -24,7 +35,7 @@ body {
 }
 
 .hamburger * {
-  border: 2px solid black;
+  border: 2px solid var(--btn-text-color);
   width: 3rem;
 }
 
@@ -38,7 +49,9 @@ body {
   justify-content: space-between;
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
-  border: 2px solid red;
+  font-family: var(--light-font);
+  font-weight: 700;
+  color: var(--btn-text-color);
 }
 
 .min-menu {
@@ -65,9 +78,9 @@ body {
   display: flex;
   gap: 1rem;
   color: #f2fcff;
-  background-color: #262626;
+  background-color: var(--btn-text-color);
   box-shadow: none;
-  border: 2px solid #262626;
+  border: 2px solid var(--btn-text-color);
   border-radius: 1.5rem;
   padding: 1.2rem 1.8rem;
   box-shadow: none;
@@ -77,7 +90,10 @@ body {
 /* main-body */
 .main-body {
   display: flex;
-  border: 2px solid red;
+  color: var(--btn-text-color);
+  padding: 1rem 2rem;
+  height: 100vh;
+  
 }
 
 .right-menu {
@@ -85,12 +101,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.main-body {
-  padding: 0 2rem;
-}
 
 .body-text {
   font-size: 4rem;
+  color: var(--btn-text-color);
 }
 
 .ai-image {
@@ -101,24 +115,126 @@ body {
   display: flex;
 }
 
-.side-menu >* {
+.side-menu > * {
   display: flex;
   flex-direction: column;
 }
 
 .side-menu {
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
-  justify-content:space-evenly;
-  border: 2px solid rebeccapurple;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .translate {
   transform: rotate(90deg);
-  border: 2px solid yellow;
   white-space: nowrap;
-  letter-spacing: 0.1cm;
-  font-weight: 300;
+  /* letter-spacing: 0.1cm; */
+  font-size: 0.8rem;
+
+}
+
+.pages {
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.pages span {
+  color: var(--inactive-text);
+}
+
+.pages span:first-child {
+  color: var(--btn-text-color);
+ 
+
+}
+
+.get-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: none;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid var(--light-font);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  font-family: var(--light-font);
+  font-weight: 600;
+  color: var(--btn-text-color);
+  font-size: 0.8rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btns > * {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.next-btn {
+  border: 1px solid var(--btn-text-color);
+  color: var(--white-btn);
+  background-color: var(--btn-text-color);
+  padding: 1.7rem 2rem;
+  border-radius: 100%;
+  font-size: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 3rem;
+}
+
+.socials a {
+  text-decoration: none;
+  font-family: var(--light-font);
+  font-weight: 500;
+  color: var(--btn-text-color);
+}
+
+
+.sub-men {
+  font-family: var(--light-font);
+  font-size: 2 rem;
+}
+
+.nav-dt {
+  background-color: var(--white-btn);
+  color: var(--btn-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.6rem 1.5rem;
+  width: auto;
+  height: auto;
+
+  .first {
+    transform: rotate(180deg);
+    color: var(--body-bg);
+    cursor: not-allowed;
+  }
+
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 13rem;
+  }
+}
+
+.nav-dt:hover {
+  background-color: var(--btn-text-color);
+  color: var(--white-btn);
+}
+
+.nav-dt a {
+  font-size: 1.2rem;
 }
