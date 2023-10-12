@@ -1,12 +1,14 @@
 /* defaults */
 @font-face {
   font-family: "Helveticas";
-  src: url("./assets/fonts/Helvetica_Neue.otf")
-    format("opentype");
+  src: url("./assets/fonts/Helvetica_Neue.otf") format("opentype");
 }
 
 body {
   font-family: "Helveticas", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -34,8 +36,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   font-size: 0.9rem;
+  border: 2px solid red;
 }
 
 .min-menu {
@@ -68,7 +71,7 @@ body {
   border-radius: 1.5rem;
   padding: 1.2rem 1.8rem;
   box-shadow: none;
-  font-family:"Helveticas", sans-serif;
+  font-family: "Helveticas", sans-serif;
 }
 
 /* main-body */
@@ -84,4 +87,38 @@ body {
 }
 .main-body {
   padding: 0 2rem;
+}
+
+.body-text {
+  font-size: 4rem;
+}
+
+.ai-image {
+  width: 70vh;
+}
+
+.left-menu {
+  display: flex;
+}
+
+.side-menu >* {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  border: 2px solid rebeccapurple;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.translate {
+  transform: rotate(90deg);
+  border: 2px solid yellow;
+  white-space: nowrap;
+  letter-spacing: 0.1cm;
+  font-weight: 300;
 }
