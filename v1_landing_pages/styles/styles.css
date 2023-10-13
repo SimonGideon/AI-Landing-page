@@ -1,12 +1,13 @@
 /* defaults */
+@import url("./animation_keys.css");
 @font-face {
   font-family: "Helveticas";
-  src: url("./assets/fonts/Helvetica_Neue.otf") format("opentype");
+  src: url("../assets/fonts/Helvetica_Neue.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Helveticas-light";
-  src: url("./assets/fonts/Helvetica_Neue_43_Light.otf") format("opentype");
+  src: url("../assets/fonts/Helvetica_Neue_43_Light.otf") format("opentype");
 }
 
 :root {

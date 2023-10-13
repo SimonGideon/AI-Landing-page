@@ -1,0 +1,35 @@
+.body-text {
+    position: relative;
+    animation: slideInImg 2s ease-in-out forwards;
+    opacity: 0; 
+    animation-delay: 0.7s;
+}
+
+.ai-image {
+    position: relative;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        right: -100%;
+        transform: translateX(90%);
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInImg {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
