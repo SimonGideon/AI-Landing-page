@@ -246,4 +246,33 @@ body {
   .min-menu2 {
     display: none;
   }
+
+  .min-menu .menu {
+    display: none;
+  }
+
+  .min-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.body-text {
+  font-size: 2rem;
+}
+
+.main-body {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.right-menu {
+
+}
+
+.ai-image {
+  display: none;
+}
 }
