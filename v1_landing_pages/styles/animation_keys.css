@@ -19,9 +19,8 @@
   }
   
   .pages span {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
+    margin: 0 0.6rem;
+    font-size: 1.3em;
     opacity: 0;
     transition: transform 0.5s, opacity 0.5s;
   }
@@ -33,7 +32,7 @@
   
   .nav-dt a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 0.6rem;
   }
 
   .side-menu {
