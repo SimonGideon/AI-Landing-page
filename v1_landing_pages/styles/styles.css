@@ -320,6 +320,9 @@ body {
 
   .side-menu {
     justify-content: space-between;
-    gap: 1.5rem;
+    align-items: center;
+    width: 4rem;
+    height: auto;
+    gap: 2rem;
   }
 }
